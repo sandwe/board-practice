@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/board-practice/static/css/main.073c9b0a.css",
+    "main.js": "/board-practice/static/js/main.59219e7a.js",
+    "static/js/787.876d9b1a.chunk.js": "/board-practice/static/js/787.876d9b1a.chunk.js",
+    "index.html": "/board-practice/index.html",
+    "main.073c9b0a.css.map": "/board-practice/static/css/main.073c9b0a.css.map",
+    "main.59219e7a.js.map": "/board-practice/static/js/main.59219e7a.js.map",
+    "787.876d9b1a.chunk.js.map": "/board-practice/static/js/787.876d9b1a.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.073c9b0a.css",
+    "static/js/main.59219e7a.js"
+  ]
+}
