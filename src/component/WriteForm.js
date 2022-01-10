@@ -8,6 +8,7 @@ const WriteForm = () => {
 
   const onSubmit = (e) => {
     e.preventDefault();
+    console.log(boardType, title, content);
   }
   return (
     <>
