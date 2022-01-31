@@ -1,10 +1,8 @@
-import React from 'react';
-import WriteForm from '../component/WriteForm';
+import React from "react";
+import WriteForm from "../component/write/WriteForm";
 
 const Write = () => {
-  return (
-    <WriteForm/>
-  )
+  return <WriteForm />;
 };
 
 export default Write;

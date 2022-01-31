@@ -1,20 +1,23 @@
 import React, {useState} from "react";
 import styled from "styled-components";
+import Images from "./Images";
 
 const WriteForm = () => {
-  const [title, setTitle] = useState('');
-  const [content, setContent] = useState('');
-  const [boardType, setBoardType] = useState('');
+  const [title, setTitle] = useState("");
+  const [content, setContent] = useState("");
+  const [boardType, setBoardType] = useState("");
 
   const onSubmit = (e) => {
     e.preventDefault();
     console.log(boardType, title, content);
-  }
+  };
   return (
     <>
       <WriteContainer onSubmit={onSubmit}>
         <BoardSelect onChange={(e) => setBoardType(e.target.value)}>
-          <option value="" hidden>분류</option>
+          <option value="" hidden>
+            분류
+          </option>
           <option value="1">게시판 1</option>
           <option value="2">게시판 2</option>
           <option value="3">게시판 3</option>
@@ -22,15 +25,16 @@ const WriteForm = () => {
         <TitleSection>
           <TitleInput
             placeholder="제목"
-            onChange={(e) => setTitle(e.target.value)
-          }/>
+            onChange={(e) => setTitle(e.target.value)}
+          />
         </TitleSection>
         <ContentSection>
           <ContentInput
             placeholder="내용"
-            onChange={(e) => setContent(e.target.value)
-          }/>
+            onChange={(e) => setContent(e.target.value)}
+          />
         </ContentSection>
+        <Images />
         <SaveButton type="submit">글쓰기</SaveButton>
       </WriteContainer>
     </>
@@ -60,7 +64,7 @@ const TitleSection = styled.div`
   width: 100%;
   border-bottom: 1px solid;
 `;
-const TitleInput = styled.input `
+const TitleInput = styled.input`
   width: 100%;
   border: none;
   outline: none;
@@ -75,7 +79,7 @@ const ContentSection = styled.div`
 const ContentInput = styled.textarea`
   display: block;
   width: 100%;
-  height: 400px;  
+  height: 400px;
   border: none;
   outline: none;
   overflow: hidden;
@@ -96,7 +100,6 @@ const SaveButton = styled.button`
   font-size: 18px;
   font-weight: 600;
   cursor: pointer;
-  
 `;
 
 export default WriteForm;

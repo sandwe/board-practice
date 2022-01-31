@@ -1,9 +1,9 @@
 import React from "react";
-import Navbar from './component/Navbar';
-import Write from './pages/Write';
-import BoardList from './component/BoardList';
+import Navbar from "./component/Navbar";
+import Write from "./pages/Write";
+import BoardList from "./component/BoardList";
 
-import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
+import {BrowserRouter as Router, Switch, Route} from "react-router-dom";
 
 function App() {
   return (
@@ -13,7 +13,6 @@ function App() {
         <div className="container">
           <Switch>
             <Route path="/write">
-              <h1>글쓰기</h1>
               <Write />
             </Route>
             <Route path="/board1">
